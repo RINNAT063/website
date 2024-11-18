@@ -7,7 +7,7 @@
   <body>
     <h1> REPO DÀNH RIÊNG CHO NHÓM WEBGL WARRIORS </h1>
     <ol>
-      <li>Trần Ánh Ngọc (Nhóm trưởng) - 50.01.103.05 1</li>
+      <li>Trần Ánh Ngọc (Nhóm trưởng) - 50.01.103.051</li>
       <li>Phạm Như Quỳnh - 50.01.103.064 </li>
       <li>Bùi Ngọc Tú Vy - 50.01.103.090 </li>
       <li>Nguyễn Phú - 50.01.103.058 </li>
