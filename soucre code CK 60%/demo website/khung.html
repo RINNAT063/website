@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAI ĐỊA ĐIỂM DU LỊCH KHÔNG NÊN BỎ LỠ</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="phan.css">
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="banner">
+                <img src="dulich.jpg" alt="banner du lich">
+                <img src="code an giang đà lạt\images\Picture1.png" alt="2">
+                <img src="code an giang đà lạt\images\Picture10.jpg" alt="3">
+            </div>
+            <script type="text/javascript">
+                $(function() {
+	                $('.banner img:gt(0)').hide();
+	                setInterval(function(){
+                        $('.banner :first-child').slideUp() 
+                        .next('img').slideDown()
+                        .end().appendTo('.banner');
+  	                }, 3000);
+                });
+            </script>
+        </div>
+
+        <div class="menu">
+            <span><a href="khung.html">Trang Chủ</a></span> |
+
+            <!--DANH SÁCH-->
+            <span class="danhsach"><a href="#2">Danh Sách &#9662;</a> 
+                <span class="cuondanhsach">
+                    <div><a href="code an giang đà lạt\Đà Lạt.html">Đà Lạt</a></div>
+                    <div><a href="code an giang đà lạt\An Giang.html">An Giang</a></div>
+                </span>
+            </span>
+            |
+            <span><a href="gioithieu.html">Giới thiệu</a></span> |
+            <span><a href="phanhoi.html">Phản hồi</a></span> |
+
+            <!--ĐĂNG NHẬP-->
+            <span><a href="#5" id="login">Đăng nhập</a></span>
+            <div class="overlay"></div>
+            <div class="login-modal">
+                <button class="x">X</button>
+                <h2>Gõ thông tin đăng nhập</h2>
+                <form>
+                    <label for="username">Tên tài khoản:</label>
+                    <input type="text" minlength="3" required id="username" placeholder="Nhập tên tài khoản">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" maxlength="8" required id="password" placeholder="Nhập mật khẩu">
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Duy trì đăng nhập</label>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <input type="submit" value="Đăng nhập" class="login-btn">
+                        <input type="reset" value="Hủy" class="cancel-btn">
+                    </div>
+                </form>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $('#login').click(function() {
+                    $('.overlay, .login-modal').fadeIn();
+                    });
+                    $('.x, .overlay').click(function() {
+                    $('.overlay, .login-modal').fadeOut();
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="middle">
+            <div class="middle_left">
+                <fieldset>
+                    <legend>Thông tin thành viên</legend>
+                    <ol>
+                        <li>Huỳnh Trần Gia Huy</li>
+                        <li>Trần Ánh Ngọc</li>
+                        <li>Nguyễn Phú</li>
+                        <li>Phạm Như Quỳnh</li>
+                        <li>Bùi Ngọc Tú Vy</li>
+                    </ol>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Các địa điểm nổi bật</legend>
+                    <ol>
+                        <li><a href="code an giang đà lạt\Đà Lạt.html">Đà Lạt</a></li>
+                        <li><a href="code an giang đà lạt\An Giang.html">An Giang</a></li>
+                    </ol>
+                </fieldset>
+            </div>
+            <div class="middle_right">
+                <div class="video">
+                    <video width="600" height="390" controls autoplay>
+                        <source src="Why Not Vietnam ph.mp4" type="video/mp4">
+                        <source src="Why Not Vietnam ph.mp4" type="video/ogg">
+                        <source src="Why Not Vietnam ph.mp4" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div style="text-align: center;">
+                <h2>COMP180205</h2>
+                <p><b>Giảng viên hướng dẫn:</b> Lương Trần Hy Hiến</p>
+            </div>
+            <div class="ic">
+                <img src="iconDULICH.jpg" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>

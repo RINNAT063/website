@@ -1,0 +1,173 @@
+.container {
+    width: 900px;
+    margin: 0px auto;
+    min-height:auto;
+    background-color: White;
+}
+.top {
+    height: 300px;
+}
+.top img {
+    width: 900px; height: 300px;
+}
+
+.menu {
+    z-index: 1;
+    position:sticky;
+    top:0px;
+    background-color: rgb(200, 240, 105);
+}
+.middle {
+    min-height: 400px;
+}
+.middle_left {
+    float: left;
+    width: 250px;
+    min-height: inherit;
+    background-color: rgb(177, 212, 234);
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.middle_right {
+    float: right;
+    width: 630px;
+    min-height: inherit;
+    background-color: White;
+    margin-left: 10px;
+    position: relative;
+}
+.middle_right .video {
+    width:630px;
+}
+.middle_right img {
+    width: 250px; height: 250px;
+}
+#colen {
+    position: absolute;
+    top: 150px; left:300px;
+}
+.bottom {
+    clear: both;
+    min-height: 300px;
+    background-color: rgb(200, 240, 105);
+    padding-top: 20px;
+    justify-items: center;
+}
+.ic img {
+    width: 170px; height: 170px;
+    border-radius: 30px;
+}
+.middle_left fieldset {
+    min-height: 150px;
+    border:#fff;
+}
+.middle_left li {
+    border-bottom: 1px dotted red;
+}
+.menu a {
+    padding: 0px 10px 0px 10px;
+}
+.middle_left a {
+    font-variant: small-caps;
+}
+.middle_left a:hover {
+    font-weight: bold;
+}
+a { text-decoration: none; }
+    a:link, a:active, a:visited {
+        color: Blue;
+    }
+a:hover {
+    color:Red;
+    font-weight: bold;
+}
+body {
+    background-color: gainsboro;
+}
+
+/*đăng nhập*/
+#login {
+    float:right;
+}
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
+}
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.login-modal h2 {
+    margin-top: 0;
+}
+.login-modal input[type="text"],
+.login-modal input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.login-modal input[type="checkbox"] {
+    margin-right: 5px;
+}
+.login-modal a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.login-modal .login-btn {
+    background-color: #007bff;
+    color: white;
+}
+.login-modal .cancel-btn {
+    background-color: #ccc;
+    color: black;
+    
+}
+
+/*danh sách*/
+.menu {
+    padding:10px 3px;
+}
+.danhsach {
+   position:relative;
+}
+.cuondanhsach {
+    width: 100px;
+    display: none;
+    position: absolute;
+    left: 40px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px black;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 4px;
+}
+.danhsach:hover .cuondanhsach {
+    display:block;
+}
+.cuondanhsach a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+}
+.cuondanhsach a:hover {
+    background-color: white;
+}
